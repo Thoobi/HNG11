@@ -3,39 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Hng task one</title>
+    <title>HngTaskOne: My tech journey</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+            <h1 id="logo">Jones</h1>
+    </header>
     <main>
         <div id="imageHolder">
-            <img src="Assets/slackProfile.jpg" class="imagepic" id="image" alt="A picture of me looking straight at the camera" data-testid="slackProfilePicture"/>
+            <img src="Assets/slackProfile2.jpg" class="imagepic" id="image" alt="A picture of me looking straight at the camera" data-testid="slackProfilePicture"/>
         </div>
-        <section>
-            <h3 data-testid="slackDisplayName">Slack Name: @Jones</h3>
-            <h3 data-testid="currentTimeUTC">Current Time: <span id="current-time">2</span></h4>
-            <h3 data-testid="currentDay">Current day of the week: <span id="current-day">3<span></h4>
-            <h3 data-testid="slackEmail" >Slack Email: sydneydaniel76@gmail.com</h4>
-        </section>
-        <section id="goal" >
-            <h2>My tech goals for the next two years</h2>
-            <p>I plan to take my skills to the next level. I'm going to master ReactJS, Redux, and React Router, and build complex applications that amaze users. I'll become a CSS wizard, harnessing the power of pure CSS along side Tailwind CSS or Bootstrap to craft stunning interfaces. I'll dive deep into web performance optimization, PWA's, and modern web APIs, ensuring my applications are lightning-fast and future-proof. I'll explore the cutting-edge technologies of WebAssembly and WebGL, pushing the boundaries of what's possible in web development. As a leader, I'll guide frontend projects from concept to launch, mentor junior developers, and conduct code reviews that help my team grow. I'll collaborate with designers to bring designs to life, pixel-perfectly. And, I'll contribute to Paystack's product development, crafting frontend features that delight users and drive business success.
-            </p>
-        </section>
-        <section>
-            <h3>Want to know more about Hng use link below</h3>
-            <a href="https://hng.tech/learn" data-testid="hngLink">HNG Tech</a>
+        <section id="container">
+            <div id="display">
+                <h4 data-testid="slackDisplayName">
+                    Slack Name: @Jones
+                </h4>
+                <h4 data-testid="currentTimeUTC">
+                    Current Time in UTC: <span id="current-time"></span>
+                </h4>
+                <h4 data-testid="currentDay">
+                    Current day of the week: <span id="current-day"><span>
+                </h4>
+                <h4 data-testid="slackEmail"  style="text-align: center;">
+                    Slack Email: <span>sydneydaniel76@gmail.com</span>
+                </h4>
+            </div>
 
-            <h3>Want to dominate search rankings use the link below</h3>
-            <a href="https://keyword.dog/" data-testid="keywordLink">Keyword.dog</a>
+            <div id="goal" >
+                <h2 style="text-align: center;">
+                    My tech goals for the next two  years
+                </h2>
+                <ul>
+                    <h3 style="padding-bottom: 10px;">Year 1</h3>
+                    <ul id="firstList">
+                        <li>Master Frontend Fundamentals: Develop a strong foundation in HTML, CSS, and           JavaScript.
+                        Learn responsive design, accessibility, and performance     optimization.
+                        </li>
+                        <li>Frontend framework Mastery: Build complex applications using ReactJS,AngularJs, NextJs. Stay up-to-date with the latest frontend best practices and features.
+                        </li>
+                        <li>
+                            UI/UX Design Skills:
+                            Learn design principles, human-centered design, and user research.
+                            Familiarize yourself with design tools like Figma, Sketch, or Adobe XD.
+                        </li>
+                        <li>
+                            Intents to Work at paystack:
+                            Take time to familarize myself with paystacks tech stack and build projects with those stacks.
+                        </li>
+                        <li>Advanced Frontend Topics:
+                            Learn about web performance optimization, PWA's, and modern web APIs.
+                            Experiment with new technologies like WebAssembly and WebGL.
+                        </li>
+                    </ul>
+                    <br>
+                        <h3 style="padding-bottom: 10px;">Year 2</h3>
+                        <ul id="secondList">
+                            
+                            <li>Lead Frontend Projects:
+                                Lead frontend projects from conception to deployment.
+                                Mentor junior developers and conduct code reviews
+                            </li>
+                            <li>Collaborate with Design Teams:
+                                Work closely with designers to implement designs pixel-perfectly.
+                                Provide feedback on design decisions and suggest improvements.
+                            </li>
+                            <li>Bag a role at Paystack:
+                                More update on this later, I will update when i do get a role at paystack.
+                            </li>
+                            <li>Collaborate with Design Teams:
+                                Work closely with designers to implement designs pixel-perfectly.
+                                Provide feedback on design decisions and suggest improvements.
+                            </li>
+                            <li>Paystack's Product Development:
+                                Contribute to Paystack's product development, focusing on frontend features.
+                                Collaborate with cross-functional teams to deliver high-quality products.
+                            </li>
+                        </ul>
+                </ul>
+            </div>
+            <div id="links">
+                <h3>Additional Links</h3>
 
-            <h3>Want to scrape any website from your laptop use the link below</h3>
-            <a href="https://scrapeanyweb.site/" data-testid="scrapeanywebLink"
-            >Scrape any website</a>
+                <p>Visit <a href="https://hng.tech/learn" data-testid="hngLink" title="Link to visit HNG webpage">HNG Tech</a> to know more about HNG Internship.</p>
+                
+                <p>Vist <a href="https://keyword.dog/" data-testid="keywordLink" title="Link to visit keyword.dog">Keyword.dog</a> to learn to dominate search rankings.</p>
+                
+                <p>Visit <a href="https://scrapeanyweb.site/" data-testid="scrapeanywebLink" title="Link to crape  any website">scrapeanyweb.site</a> to scrape any website.</p>
+                
+            </div>
         </section>
+        
     </main>
     <script src="Index.js"/>
     </body>
